@@ -11,6 +11,13 @@
 		"data": true,
 		"auth": {
 			"validator": "$auth != null"
-		}
+		},
+		"parameters": {
+	      "filter": {
+	        "value": {
+	          "userId": "$auth.id"
+	        }
+	      }
+	    }
 	}
 ]
